@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image:url(image.jpg);
+    
+}
+
+h1 {
+    color: #333;
+}
+
+#imageInput {
+    margin: 20px;
+    
+}
+
+#sketchCanvas {
+    border: 1px solid #333;
+    margin: 20px;
+    width:300px;
+}
+
+#convertButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+    text-shadow: 0 0 10px red;
+  }
+  25% {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+  }
+  50% {
+    color: green;
+    text-shadow: 0 0 10px green;
+  }
+  75% {
+    color: blue;
+    text-shadow: 0 0 10px blue;
+  }
+  100% {
+    color: red;
+    text-shadow: 0 0 10px red;
+  }
+}
+
+.glowing-text {
+  font-size: 36px;
+  animation: glow 1s infinite alternate, colorChange 4s infinite linear;
+}
+
+/* Define a keyframes animation for the glow effect */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px red;
+  }
+  100% {
+    text-shadow: 0 0 20px red;
+  }
