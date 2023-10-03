@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image to Sketch Converter</title>
+    <title> Converter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1 class="glowing-text">Image to Sketch Converter</h1>
+    <h1 class="glowing-text">Image To Sketch Converter</h1>
     <input type="file" id="imageInput" accept="image/*">
     <canvas id="sketchCanvas"></canvas>
     <button id="convertButton">Convert</button>
-    <footer>
+       <button id="downloadButton">Download Image</button>
+       
+       <hr>
+       <section>
+       <div class="container">
+        <h1 class="glowing-text">Image Resolution Converter</h1>
+        <input type="file" id="photoInput" accept="image/*">
+        <button id="converthd">Convert to HD</button>
+        <h5 style="color:white;">Do screenshot for a meantime still fixing code for download</h5>
+        <canvas id="outputCanvas" ></canvas>
+    </div>
+    </section>
+       
+    <footer style="color:white;">
       &copy;Copyright infringement
       <br>
       Any issue with the converter contact me:<a href="">lautrezov@gmail.com </a>
