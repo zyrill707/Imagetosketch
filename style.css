@@ -67,3 +67,8 @@ h1 {
     text-shadow: 0 0 20px red;
   }
 } 
+
+#outputCanvas{
+  height:240px;
+  width:310px;
+}
