@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> Converter</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -18,13 +19,14 @@
         <h1 class="glowing-text">Image Resolution Converter</h1>
         <input type="file" id="photoInput" accept="image/*">
         <button id="converthd">Convert to HD</button>
-        <h5 style="color:white;">Do screenshot for a meantime still fixing code for download</h5>
+        <button onclick="downloadImage()" id="downloadButtons">Download Image</button>
+        <h5 style="color:white;">Early stage of the added button, so you will still experience issues.</h5>
         <canvas id="outputCanvas" ></canvas>
     </div>
     </section>
        
     <footer style="color:white;">
-      &copy;Copyright infringement
+      &copy;2023 imageconverter
       <br>
       Any issue with the converter contact me:<a href="">lautrezov@gmail.com </a>
     </footer>
