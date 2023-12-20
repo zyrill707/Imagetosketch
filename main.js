@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 const img = new Image();
                 img.onload = function() {
 
-                    const newWidth = 1920; 
-                    const newHeight = 1080; 
+                    const newWidth = 3840; 
+                    const newHeight = 2160; 
 
                     outputCanvas.width = newWidth;
                     outputCanvas.height = newHeight;
@@ -75,3 +75,23 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+function downloadImage() {
+    const canvas = document.getElementById("outputCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const input = document.getElementById("photoInput");
+    const img = new Image();
+
+    img.onload = function () {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = "hd_image.png";
+      link.click();
+    };
+
+    img.src = URL.createObjectURL(input.files[0]);
+  }
